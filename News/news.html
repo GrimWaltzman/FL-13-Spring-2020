@@ -11,30 +11,30 @@
         <h1>Your Real News</h1>
         <nav>
             <ul>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Local</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Sports</a></li>
+                <li><a href="#" title="World news">World</a></li>
+                <li><a href="#" title="Your local news">Local</a></li>
+                <li><a href="#" title="News about politics">Politics</a></li>
+                <li><a href="#" title="Technology news">Tech</a></li>
+                <li><a href="#" title="Business news">Business</a></li>
+                <li><a href="#" title="Science News">Science</a></li>
+                <li><a href="#" title="Healtcare and health news">Health</a></li>
+                <li><a href="#" title="Sports news">Sports</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-       <article>
+    <main role="main">
+       <article role="article">
            <header>
                 <h2>An Article About Something Really Important. Probably</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repudiandae totam voluptatem porro sed ad earum beatae magni corrupti officia?</p>   
-                <p class="author">Author: <a href="#" title="More articles by this author">Firstname Lastname</a> </p>
+                <p class="author" itemprop="author">Author: <a href="#" title="More articles by this author">Firstname Lastname</a> </p>
                 <p class="pubdate">Posted <time datetime="2020-03-19T15:53">19.03.20 at 15:53</time></p>
-                <figure>
-                    <img src="images/img1.jpg" alt="A bunch of people walking">
-                    <figcaption>A bunch of people walking</figcaption>
-                </figure>
            </header>
+           <figure>
+                <img src="images/img1.jpg" alt="A bunch of people walking">
+                <figcaption>A bunch of people walking</figcaption>
+            </figure>
            <h3>So what is the article about?</h3>
            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis error corporis minus possimus, inventore cumque. Pariatur veniam nisi quae iure voluptatibus architecto nulla soluta mollitia maiores itaque, laudantium harum dolorem. Similique magnam inventore delectus laborum natus, ab quae dolorum enim.</p>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt dignissimos, atque nostrum ex commodi possimus nisi id dolore omnis voluptatum molestias facere recusandae sint! Ipsa amet error similique recusandae assumenda doloribus non pariatur eligendi unde perspiciatis, praesentium delectus sapiente libero dicta! Aperiam consectetur doloribus dicta distinctio ipsum quos amet voluptatem maxime molestias mollitia repellendus architecto quisquam quia, provident alias?</p>
@@ -59,15 +59,14 @@
         </article>
     </main>
 
-    <aside id="adv">
+    <aside id="adv" role="complementary">
         <h3>Hey you</h3>
         <p>I know you want your ads to be right here.</p>
         <a href="#"><img src="images/img2.jpg" alt="Picture for an ad"></a>
         <p>Or contact us at <a href="tel://555-17-30">555-17-30</a></p>
     </aside>
     
-    <footer>
-        <hr>
+    <footer role="contentinfo">
         <div class="left-col">
             <p>Contact info:</p>
             <address>
