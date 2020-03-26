@@ -1,3 +1,4 @@
+/* Global styles */
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +9,11 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Header and navigation */
 #top-header{
    text-align: center;
 }
@@ -26,14 +32,11 @@ nav ul{
 
 }
 
-a{
-    text-decoration: none;
-}
-
 nav li a{
     margin-left: 1em;
 }
 
+/* Main part */
 main{
     min-height: 85vh;
     max-width: 1140px;
@@ -70,6 +73,7 @@ blockquote{
     margin-bottom: 0em;
 }
 
+/* Ads */
 #adv{
     background-color: gray;
     max-width: 400px;
@@ -84,6 +88,9 @@ blockquote{
     transform: translate(-50%);
 }
 
+
+
+/* Footer */
 footer{
     text-align: center;
     margin-bottom: 0;
