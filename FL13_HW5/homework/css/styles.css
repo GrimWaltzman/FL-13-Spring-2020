@@ -1,0 +1,293 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+body {
+  font-family: roboto;
+}
+
+.post-1 {
+	background: #F3D250;
+}
+.post-2 {
+	background: #8D8741;
+}
+.post-3 {
+	background: #659DBD;
+}
+.post-4 {
+	background: #DAAD86;
+}
+
+/* Your styles go here */
+
+body{
+  padding: 0 2em;
+  background-color: #0b192f;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+
+  grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer";
+
+  grid-gap: 20px;
+
+  color: #484848;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.header{
+  background-color: #162b4d;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+}
+
+h1{
+  font-weight: normal;
+}
+
+h1{
+  margin-left: 25px;
+}
+
+.header h1 span{
+  color: rgb(127, 24, 79);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a{
+  padding: 30px;
+}
+
+nav a:hover{
+  background-color: #b8b8b8;
+}
+
+.main{
+  grid-area: main;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #162b4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 15px;
+}
+
+.main article{
+  display: flex;
+  font-weight: lighter;
+  line-height: 2.5;
+}
+
+.main article:nth-child(even),
+.main article:nth-child(even) .container{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.main article:last-child{
+  height: 450px;
+  background: url('../img/post5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.main article:last-child h2{
+  margin-bottom: 0;
+  margin-top: 150px;
+  line-height: 1;
+}
+
+.container{
+  width: 50%;
+  display: flex;
+}
+
+.container:hover{
+  background-color: inherit;
+  opacity: 0.6;
+}
+
+.container img{
+  width:100%;
+  height: 100%;
+}
+
+
+.container div{
+  padding: 35px 30px;
+  box-sizing: border-box;
+}
+
+.main h2{
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.main article time{
+  width: 10%;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.main time span{
+  font-size: 200%;
+  display: block;
+  padding: 2px;
+}
+
+
+.aside img{
+  max-width: 100%;
+}
+
+.aside article{
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.aside article div{
+  padding: 40px 21px 30px 21px;
+}
+
+.aside, 
+.aside h2{
+  font-weight: lighter;
+  line-height: 2;
+}
+
+aside a{
+  display: block;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  width: 40%;
+  font-size: 0.8em;
+  margin-top: 25px;
+}
+
+aside a:hover{
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.footer div:last-child{
+  max-width: 50%;
+}
+
+@media (max-width: 1400px){
+  body{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 786px){
+  body{
+    font-size: 10px;
+  }
+
+  .main article{
+    padding-right: 0;
+  }
+
+  .header,
+  .container{
+    flex-direction: column;
+  }
+
+  .header h1{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .header:before{
+    content: '≡' ;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .main article, 
+  .main article:nth-child(even),
+  .main article:nth-child(even) .container{
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .main article img, 
+  .main article div,
+  .main article time{
+    width: 100%;
+  }
+
+  .main time span{
+    font-size: 200%;
+    display: inline;
+    padding: 2px;
+  }
+
+  time{
+    margin-bottom: 5em;
+  }
+
+  aside a{
+    width: 50%;
+  }
+
+  .footer{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px 0 20px;
+  }
+}
+
+@media (max-width: 480px){
+  body{
+    grid-template-areas: 
+      "header header"
+      "main main"
+      "aside aside"
+      "footer footer";
+  }
+
+  aside a{
+    width: 20%;
+  }
+}

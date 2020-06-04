@@ -1,0 +1,57 @@
+#root{
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    position: relative;
+}
+
+li i{
+    position: relative;
+    top: 5px;
+    color: rgb(176, 176, 176);
+}
+
+.folder i{
+    color: rgb(237, 188, 11);
+}
+
+.italicised{
+    font-style: italic;
+}
+
+.folder+ul:only-child{
+    font-style: italic;
+}
+
+li.folder.closed i{
+    content: 'folder_open';
+}
+
+li:hover,
+a:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.context-menu{
+    position: absolute;
+    padding: 5px;
+    background-color: #fff;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+
+li.closed+ul,
+.hidden{
+    display: none;
+}
