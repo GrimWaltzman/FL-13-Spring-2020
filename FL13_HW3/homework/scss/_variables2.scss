@@ -1,0 +1,30 @@
+$fonts: (
+    source: 'Source Sans Pro',
+    hind: 'Hind',
+    fresca: 'Fresca'
+);
+
+$white: #fff;
+
+$content-background:rgb(33, 35, 46);
+$background-image: "../img/m-h-night.jpg";
+
+
+$button-color: rgb(227, 172, 0);
+
+
+$heading-color:$white;
+$plate-color: rgb(255, 78, 51);
+$card-bg: rgb(59, 63, 80);
+$text-color: rgb(187, 195, 206);
+$card-font: map-get($fonts, fresca);
+
+$banner:(
+    banner-left: $button-color,
+    banner-right: rgb(147, 45, 81)
+);
+
+
+$footer-color: $card-bg;
+$footer-font: map-get($fonts, fresca);
+$footer-logo-font: map-get($fonts, fresca)

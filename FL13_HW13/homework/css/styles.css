@@ -1,0 +1,9 @@
+.card{
+    border: none;
+}
+.main__button,
+.form__button{
+    border: rgb(255, 127, 80);
+    background-color: rgb(255, 127, 80);
+    color: white;
+}

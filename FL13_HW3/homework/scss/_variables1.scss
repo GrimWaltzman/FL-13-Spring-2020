@@ -1,0 +1,30 @@
+$fonts: (
+    source: 'Source Sans Pro',
+    hind: 'Hind',
+    fresca: 'Fresca'
+);
+
+$white: #fff;
+
+$content-background:$white;
+$background-image: "../img/m-h-day.jpg";
+
+
+$button-color: rgb(105, 153, 0);
+
+
+$heading-color: rgb(44, 47, 60);
+$plate-color: rgb(20, 160, 199);
+$card-bg: rgb(33, 35, 46);
+$text-color: rgb(187, 195, 206);
+$card-font: map-get($fonts, hind);
+
+$banner:(
+    banner-left: rgb(105, 153, 2),
+    banner-right: rgb(45, 91, 218)
+);
+
+
+$footer-color: rgb(33, 35, 46);
+$footer-font: map-get($fonts, Hind);
+$footer-logo-font: map-get($fonts, source)
